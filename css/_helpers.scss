@@ -1,12 +1,4 @@
-.weight-300{
-    font-weight: 300;
-}
-.weight-400{
-    font-weight: 400;
-}
-.weight-600{
-    font-weight: 600;
-}
-.weight-800{
-    font-weight: 800;
+// Selection Color
+h1::selection, p::selection, a::selection, h2::selection, h3::selection, h4::selection, img::selection{
+    background: $secundayColor;
 }
