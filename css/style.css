@@ -1,0 +1,419 @@
+.weight-300 {
+  font-weight: 300;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+h1::-moz-selection, p::-moz-selection, a::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, img::-moz-selection {
+  background: #50d890;
+}
+
+h1::selection, p::selection, a::selection, h2::selection, h3::selection, h4::selection, img::selection {
+  background: #50d890;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #F5F5F5;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  height: auto;
+  margin: 30px auto;
+}
+
+.header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  color: #707070;
+  font-family: "Gotham";
+}
+
+.nav .nav__link {
+  color: #707070;
+  font-size: 20px;
+}
+
+.nav .nav__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav .nav__link:active {
+  -webkit-animation: clickGrow 1s ease forwards;
+          animation: clickGrow 1s ease forwards;
+}
+
+.welcome {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcome-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.welcome-text .welcome-text__title::before {
+  content: " ";
+  padding: 10px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #50d890;
+  z-index: -10;
+  position: relative;
+  bottom: -30px;
+  left: -30px;
+  border-radius: 50%;
+  -webkit-animation: grow 2s ease alternate infinite;
+          animation: grow 2s ease alternate infinite;
+}
+
+.welcome-text .welcome-text__title {
+  font-size: 60px;
+  font-family: "Gotham";
+  color: #707070;
+}
+
+.welcome-text .welcome-text__quote {
+  font-size: 20px;
+  line-height: 25px;
+  padding-left: 10px;
+  border-left: 3px solid #50d890;
+  color: #707070;
+}
+
+.welcome-text .donate-btn {
+  background: #50d890;
+  padding: 10px 60px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.welcome-img {
+  min-width: 55%;
+  padding: 10px;
+}
+
+.welcome-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section:not(:last-child), .welcome {
+  margin-bottom: 50px;
+}
+
+.about-us {
+  height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.about-us .title {
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Gotham";
+  color: #707070;
+}
+
+.about-us .information {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  grid-row: 2 / -1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about-us .information .information__title {
+  font-family: "Gotham";
+  font-size: 40px;
+  color: #707070;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-us .information .information__title::before {
+  content: " ";
+  padding: 10px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #50d890;
+  z-index: -10;
+  position: relative;
+  bottom: -30px;
+  left: -30px;
+  border-radius: 50%;
+  -webkit-animation: grow 2s ease alternate infinite;
+          animation: grow 2s ease alternate infinite;
+}
+
+.about-us .information .information__quote {
+  font-size: 20px;
+  color: #707070;
+  line-height: 25px;
+  padding-left: 10px;
+  border-left: 3px solid #50d890;
+}
+
+.about-us .rocket {
+  grid-column: 3 / -1;
+  grid-row: 2 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .rocket img {
+  width: 70%;
+  height: 70%;
+}
+
+.how-to-apply {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.how-to-apply .title {
+  font-family: "Gotham";
+  text-align: center;
+  font-size: 50px;
+  color: #707070;
+}
+
+.how-to-apply .how-to-apply__video {
+  outline: none;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+.our-programs {
+  height: 70vh;
+}
+
+.our-programs .title {
+  text-align: center;
+  font-family: "Gotham";
+  font-size: 40px;
+  color: #707070;
+  margin-bottom: 10px;
+}
+
+.our-programs .programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-programs .program {
+  margin: 10px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  max-width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #707070;
+}
+
+.our-programs .program__title {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.our-programs .program__subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.our-programs .program__quote {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.contact-us {
+  height: 30vh;
+}
+
+.contact-us .title {
+  position: relative;
+  font-family: "Gotham";
+  font-size: 40px;
+  color: #707070;
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.contact-us .subtitle {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.contact-us .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us .social-media .social-media__icon {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.contact-us .social-media .social-media__icon:active {
+  -webkit-animation: clickGrow 1s ease forwards;
+          animation: clickGrow 1s ease forwards;
+}
+
+.footer {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #707070;
+}
+
+@-webkit-keyframes grow {
+  0% {
+  }
+  60% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+  }
+  60% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes clickGrow {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes clickGrow {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
