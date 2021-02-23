@@ -46,6 +46,31 @@ h1::selection, p::selection, a::selection, h2::selection, h3::selection, h4::sel
   background: #50d890;
 }
 
+.show {
+  -webkit-animation: show 2s ease;
+          animation: show 2s ease;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20vw);
+            transform: translateX(-20vw);
+  }
+  to {
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20vw);
+            transform: translateX(-20vw);
+  }
+  to {
+  }
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -74,6 +99,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #F5F5F5;
+}
+
+.barSpy {
+  width: 0;
+  height: 3px;
+  background: #50d890;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .logo {
@@ -178,13 +217,11 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  max-width: 70vw;
-  padding: 2.5rem;
 }
 
 .welcome-img svg {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .section:not(:last-child), .welcome {
@@ -309,11 +346,19 @@ body {
 }
 
 .how-to-apply .how-to-apply__video {
-  outline: none;
   margin: 0 auto;
-  min-width: 50%;
-  max-width: 1000px;
-  height: 25rem;
+  text-align: center;
+  height: auto;
+}
+
+.how-to-apply .how-to-apply__video i {
+  font-size: 6.25rem;
+  color: #e40808;
+}
+
+.how-to-apply .how-to-apply__video iframe {
+  min-width: 50vw;
+  height: 40vh;
 }
 
 .our-programs {
@@ -577,8 +622,8 @@ body {
 
 @-webkit-keyframes bubble {
   from {
-    -webkit-transform: translateX(-3%);
-            transform: translateX(-3%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
   to {
   }
@@ -586,10 +631,14 @@ body {
 
 @keyframes bubble {
   from {
-    -webkit-transform: translateX(-3%);
-            transform: translateX(-3%);
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
   to {
   }
+}
+
+.nav .active {
+  color: #50d890;
 }
 /*# sourceMappingURL=style.css.map */

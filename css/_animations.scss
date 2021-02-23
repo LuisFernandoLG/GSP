@@ -1,0 +1,15 @@
+.show{
+    animation: show 2s ease;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translateX(-20vw);
+    }
+
+    to{
+        
+        
+    }
+}

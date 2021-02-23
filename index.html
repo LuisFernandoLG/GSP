@@ -50,11 +50,13 @@
                 </div>
 
                 <nav class="nav">
-                    <a href="#about-us" class="nav__link nav__about-us">About us</a>
-                    <a href="#how-to-apply" class="nav__link nav__how-to-apply">How to apply</a>
-                    <a href="#our-programs" class="nav__link nav__our-programs">Our programs</a>
-                    <a href="#contact-us" class="nav__link nav__contact-us">Contact us</a>
+                    <a href="#about-us" data-scroll-spy class="nav__link nav__about-us active">About us</a>
+                    <a href="#how-to-apply"  data-scroll-spy class="nav__link nav__how-to-apply">How to apply</a>
+                    <a href="#our-programs" data-scroll-spy class="nav__link nav__our-programs">Our programs</a>
+                    <a href="#contact-us" data-scroll-spy class="nav__link nav__contact-us">Contact us</a>
                 </nav>
+
+                <div class="barSpy"></div>
             </header>
 
             <div class="welcome">
@@ -260,17 +262,14 @@
                         <rect width="732" height="539.035" fill="white"/>
                         </clipPath>
                         </defs>
-                        </svg>
-                        
-                        
-                        
+                        </svg>   
                 </div>
 
             </div>
 
             <main class="main">
 
-                <section class="section about-us" id="about-us">
+                <section data-scroll-spy class="section about-us" id="about-us">
 
                     <h2 class="title">
                         About us
@@ -293,17 +292,20 @@
 
                     
                 </section>
-                <section class="section how-to-apply" id="how-to-apply">
+                <section data-scroll-spy class="section how-to-apply" id="how-to-apply">
 
                     <h2 class="title">
                         How to apply
                     </h2>
 
-                    <iframe  src="https://www.youtube.com/embed/d5mWnt3A1zI" class="how-to-apply__video" allowfullscreen></iframe>
+
+                    <div class="how-to-apply__video">
+
+                    </div>
 
 
                 </section>
-                <section class="section our-programs" id="our-programs">
+                <section data-scroll-spy class="section our-programs" id="our-programs">
 
                     <h2 class="title">
                         Our programs
@@ -338,7 +340,7 @@
                     </div>
 
                 </section>
-                <section class="section contact-us" id="contact-us">
+                <section data-scroll-spy class="section contact-us" id="contact-us">
 
                     <h2 class="title">
                         Contact Us
@@ -368,8 +370,6 @@
         </div>
 
         <script src="js/app.js" type="module"></script>
-
-        
 
     </body>
 </html>
